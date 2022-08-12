@@ -146,6 +146,10 @@ body {
     padding: 1rem;
 }
 
+.linkONE{
+    text-decoration: none;
+}
+
 .disenador{
     font-size: 12px;
 }
