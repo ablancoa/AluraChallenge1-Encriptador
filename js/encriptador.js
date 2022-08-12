@@ -2,7 +2,7 @@ var btnEncriptar = document.getElementById('btnEncriptar');
 var btnDesencriptar = document.getElementById('btnDesencriptar');
 var btnCopiar = document.getElementById('btnCopiar');
 var salida = document.getElementById("valueInput");
-setInterval(tamanoPantalla, 1000);
+setInterval(tamanoPantalla, 50);
 
 var contador = 0;
 
@@ -72,6 +72,7 @@ function copiarTexto(){
         .catch(err => {
         console.log('Something went wrong', err);
     })
+    document.getElementById("entrada").focus();
 
 }
 
