@@ -10,12 +10,13 @@ var contador = 0;
 function tamanoPantalla(){
     var pantallaWidth = screen.width;
     let contenedorTexto = document.getElementById("contenedorTexto");
-    if(pantallaWidth < 400){
+    if(pantallaWidth < 500){
         contenedorTexto.style.display = "block";
         document.getElementById("contenedorEntrada").style.width = "100%";
         document.getElementById("contenedorSalida").style.width = "100%";
         document.getElementById("contenedorSalida").style.marginLeft = "0";
         document.getElementById("contenedorSalida").style.marginTop = "1rem";
+        document.getElementById("container").style.padding = "1rem";
     }
     else{
         contenedorTexto.style.display = "flex";
@@ -23,6 +24,7 @@ function tamanoPantalla(){
         document.getElementById("contenedorSalida").style.width = "30%";
         document.getElementById("contenedorSalida").style.marginLeft = "2rem";
         document.getElementById("contenedorSalida").style.marginTop = "0";
+        document.getElementById("container").style.padding = "1rem 3rem";
     }
 
 }
