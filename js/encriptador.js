@@ -36,7 +36,8 @@ function encriptar(){
         salida.style.background = "white";
         salida.style.overflowY = "scroll"; 
         salida.innerHTML=encriptadorVocales;
-        btnCopiar.style.visibility = "visible"; 
+        btnCopiar.style.visibility = "visible";
+        document.getElementById("entrada").value = "";
         document.getElementById("entrada").focus();
     }
     else{
@@ -54,6 +55,7 @@ function desencriptar(){
         salida.style.overflowY = "scroll"; 
         salida.innerHTML=desencriptarVocales;      
         btnCopiar.style.visibility = "visible";
+        document.getElementById("entrada").value = "";
         document.getElementById("entrada").focus();           
     }
     else{

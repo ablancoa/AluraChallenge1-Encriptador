@@ -1,20 +1,21 @@
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
-    background-color: #64D9EE;
+    background-color: #023047;
     color: white;
     font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    display: grid;
+    place-items: center;
+    height: 100vh
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 1440px;
     min-width: 375px;
-    background-color: #2298ad;
+    background-color: #219ebc;
     border-radius: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -23,7 +24,7 @@ body {
     display: block;
 }
 
-.encriptador{
+.encriptador {
     display: flex;
     object-fit: cover;
 }
@@ -33,17 +34,17 @@ body {
     align-items: center;
 }
 
-.entradaTexto{
+.entradaTexto {
     border-radius: 2rem;
     height: 100%;
-    
+
 
 }
 
-.textoEntrada{
+.textoEntrada {
     border: 0px;
     width: 100%;
-    background-color: #2298ad;
+    background-color: #8ecae6;
     min-height: 200px;
     font-family: sans-serif;
     box-sizing: border-box;
@@ -52,17 +53,18 @@ body {
     resize: none;
     outline: none;
     padding: 1rem;
+    color: #023047;
 
 }
 
 
-.botones{
+.botones {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-top: 1rem;
 }
 
-.boton{
+.boton {
     padding: 10px;
     width: 40%;
     padding: 1rem 0;
@@ -71,42 +73,52 @@ body {
     color: white;
     cursor: pointer;
     word-wrap: break-word;
-    
+
 }
 
 
-#btnEncriptar{
-    background-color: #c56666;
-}
-#btnEncriptar:hover{
-    background-color: #fa3a3a;
-    border: 1px solid black;
+#btnEncriptar {
+    background-color: #023047;
+    transition: 0.8s linear;
 }
 
-#btnDesencriptar{
-    background-color: #c56666;
-}
-#btnDesencriptar:hover{
-    background-color: #fa3a3a;
-    border: 1px solid black;
+#btnEncriptar:hover {
+    background-color: #023047a8;
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
 }
 
-.salida{
-    color: black;
+#btnDesencriptar {
+    background-color: #023047;
+    transition: 0.8s linear;
+}
+
+#btnDesencriptar:hover {
+    background-color: #023047a8;
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.salida {
+    color: #023047;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: white;
     border-radius: 10px;
     justify-content: center;
-    height: 100%;
 }
 
-.texto{
+.texto {
     background-color: white;
     background-image: url(../img/Muñeco.svg);
     background-position: center;
-    background-size:50% 50%;
+    background-size: 50% 50%;
     background-repeat: no-repeat;
+    width: 100%;
     min-height: 200px;
-    word-wrap:break-word;
+    word-wrap: break-word;
     white-space: initial;
     border-radius: 10px;
     border: 2px;
@@ -114,46 +126,46 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     font-family: sans-serif;
-    font-size: 0.8rem;
     padding: 1rem;
-    box-sizing: border-box;    
-    
+    box-sizing: border-box;
+
 }
 
-.btnCopiar{
+.btnCopiar {
     padding: 10px;
     width: 80%;
     padding: 1rem 0;
     border: none;
     border-radius: 5px;
-    background-color: #f05555;
+    background-color: #023047;
     color: white;
     cursor: pointer;
-    margin:1rem;
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-}
-#btnCopiar:hover{
-    background-color: #fa3a3a;
-    border: 1px solid black;
+    margin: 0 auto;
+
 }
 
-.footer{
+#btnCopiar:hover {
+    background-color: #023047a8;
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
 }
 
-.linkONE{
+.linkONE {
     text-decoration: none;
 }
 
-.disenador{
+.disenador {
     font-size: 12px;
 }
 
-.social_link{
+.social_link {
     display: inline-block;
     margin: 0.5rem;
     width: 2rem;
@@ -161,18 +173,18 @@ body {
     background-size: 100%;
 }
 
-.social_link.facebook{
+.social_link.facebook {
     background-image: url(../img/facebook.svg);
 }
 
-.social_link.linkedin{
+.social_link.linkedin {
     background-image: url(../img/linkedin.svg);
 }
 
-.social_link.instagram{
+.social_link.instagram {
     background-image: url(../img/instagram.svg);
 }
 
-.social_link.github{
+.social_link.github {
     background-image: url(../img/github.svg);
 }
